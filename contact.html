@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們｜高敏國際股份有限公司</title>
+    <meta name="description" content="高敏國際股份有限公司，專業持分土地、公同共有、佔用土地、私設道路買賣與整合，誠信高效，服務全台。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: white; z-index: 50; padding-top: 4rem; }
+        .mobile-menu.active { display: block; }
+        .mobile-menu-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 40; }
+        .mobile-menu-overlay.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 頂部導航 -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">高敏國際股份有限公司</a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600">首頁</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-blue-600">關於我們</a>
+                    <a href="/services.html" class="text-gray-700 hover:text-blue-600">服務項目</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-blue-600">聯絡我們</a>
+                </div>
+                <!-- Hamburger Menu Button -->
+                <button id="hamburger" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col space-y-4">
+                <a href="/" class="text-gray-700 hover:text-blue-600 text-lg py-2">首頁</a>
+                <a href="/about.html" class="text-gray-700 hover:text-blue-600 text-lg py-2">關於我們</a>
+                <a href="/services.html" class="text-gray-700 hover:text-blue-600 text-lg py-2">服務項目</a>
+                <a href="/contact.html" class="text-gray-700 hover:text-blue-600 text-lg py-2">聯絡我們</a>
+            </div>
+        </div>
+    </div>
+ <!-- 聯絡我們 -->
+ <div id="contact" class="page pt-8">
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">聯絡我們</h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">聯絡資訊</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center">
+                            <span class="text-blue-600 mr-2">📞</span>
+                            <span>0973-133-993</span>
+                        </p>
+                        <p class="flex items-center">
+                            <span class="text-blue-600 mr-2">📍</span>
+                            <span>新北市新莊區瓊泰路188號14樓之1</span>
+                        </p>
+                        <p class="flex items-center">
+                            <span class="text-blue-600 mr-2">🕒</span>
+                            <span>週一至週日：09:00 - 21:00</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">聯絡表單</h3>
+                    <div class="w-full flex justify-center">
+                        <iframe src= https://docs.google.com/forms/d/e/1FAIpQLSdLsUZVsIOX2-vkMmwhpdLJFbn-gc-FErK-VnrtrMSLTpEfPQ/viewform?embedded=true width="640" height="828" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p>© 2024 高敏國際股份有限公司. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+        hamburger.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+</html> 
