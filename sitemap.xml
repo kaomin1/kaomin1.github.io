@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 首頁 - 持分買賣主要頁面 -->
+  <url>
+    <loc>https://kaomin168.com/</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 持分土地買賣專頁 -->
+  <url>
+    <loc>https://kaomin168.com/shareland.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 持分建地買賣專頁 -->
+  <url>
+    <loc>https://kaomin168.com/coown.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 持分房屋買賣專頁 -->
+  <url>
+    <loc>https://kaomin168.com/occupyland.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 持分土地收購專頁 -->
+  <url>
+    <loc>https://kaomin168.com/privateroad.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 我們的服務 - 持分買賣服務總覽 -->
+  <url>
+    <loc>https://kaomin168.com/services.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 關於我們 - 持分買賣專家介紹 -->
+  <url>
+    <loc>https://kaomin168.com/about.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 聯絡我們 - 持分買賣諮詢 -->
+  <url>
+    <loc>https://kaomin168.com/contact.html</loc>
+    <lastmod>2025-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset> 
